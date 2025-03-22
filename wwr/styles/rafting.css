@@ -7,14 +7,18 @@
     --paragraph-font: 'Merriweather';
     --padding: 1rem;
     --border: 1 px solid rgb (0 0 0 / 0.1); 
+    --page-width: 75%;
 }
 
 a {
     text-decoration: none;
 }
 
-.hero img {
+div {
     position: relative;
+}
+.hero img {
+    position: absolute;
     display: block;
     width: 100%;
     height: auto;
@@ -27,6 +31,10 @@ h1 {
 
 article {
     position: absolute;
+    opacity: 1;
+}
+article img {
+    float: right;
 }
 
 section {
