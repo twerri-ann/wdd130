@@ -36,4 +36,5 @@ article img {
 
 section {
     position: relative;
+    align-items: baseline;
 }
