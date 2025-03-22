@@ -16,8 +16,9 @@ a {
 .hero img {
     position: relative;
     display: block;
-    width: 200%;
+    width: 100%;
     height: auto;
+
 }
 
 h1 {
@@ -26,13 +27,6 @@ h1 {
 
 article {
     position: absolute;
-    text-align: left;
-    background-color: white;
-    opacity: 1;
-}
-
-article img {
-    float: right;
 }
 
 section {
