@@ -1,81 +1,77 @@
 :root {
-    --primary-bg-color: #00af9a;  
-    --secondary-bg-color: #1c220a; 
-    --heading-text-color: #8a2d3e; 
-    --paragraph-text-color: #ca5afa; 
-    --link-text-color: #ffffff; 
-    --social-media-link-color: #ffffff; 
-    --page-width: 75%; 
+    --primary-color: #00af9a;  
+    --secondary-color: #1c220a; 
+    --accent1-color: #ca5afa;
+    --accent2-color: #8a2d3e;
+    
+    --heading-font: 'Boldonse', serif;
+    --paragraph-front: 'Merriweather', sans-serif;
 }
 
 body {
-    font-family: 'Merriweather', sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 75%;
-    margin: 0 auto; 
-    background-color: #1c220a;
+    font-family: var(--paragraph-front);
 }
 
-h1 {
-    font-family: 'Boldonse', serif; 
-    color: #8a2d3e;
-    position: absolute;  
-    top: 20px; 
-    left: 20px;
-}
-
-p {
-    color: #ca5afa;
-    background-color: #1c220a;
-    padding: 15px;
-    font-size: 16px;
-}
-
-.hero div {
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-
-.hero div h1 {
-    position: absolute;
-}
-
-.hero div article {
-    position: absolute;
-    top: 30%;
-    left: 10%; 
-    width: 20%;
-    opacity: 0.9; 
-    background-color: #1c220a; 
-    padding: 20px;
-}
-
-.social-media a {
-    text-decoration: none; 
-}
-
-.social-media img {
-    width: 40px; 
-    height: auto;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-a:hover, a:focus {
-    text-decoration: underline; 
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.social-media a:hover, .social-media a:focus {
-    text-decoration: underline;
-}
-
-section {
+.hero {
     position: relative;
-    padding: 20px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff61;
+}
+
+.hero article {
+    background-color: #ffffff61;
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    right: 2rem;
+}
+
+.hero article img {
+    float: right;
+    margin: 2rem;
+    width: 13rem;
+}
+
+.hero article p {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #3e3e3e;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1 fr;
+    padding: 2rem;
+}
+
+.social {
+    grid-column: 3;
+    justify-self: end;
+}
+
+.social img {
+    width: 3em;
+    grid-column: 3;
 }
