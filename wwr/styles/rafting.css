@@ -26,6 +26,8 @@ h1 {
 
 article {
     position: absolute;
+    background-color: #1c220a;
+    opacity: 1;
 }
 
 article img {
