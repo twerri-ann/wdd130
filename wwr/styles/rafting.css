@@ -33,3 +33,7 @@ article {
 article img {
     float: right;
 }
+
+section {
+    position: relative;
+}
