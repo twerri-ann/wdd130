@@ -29,33 +29,39 @@ header, main, footer {
     position: relative;
 }
 
+.hero img {
+    width: 100%;
+}
+
 .hero h1 {
     position: absolute;
     top: 1em;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 2rem;
+    right: 2rem;
+    text-align: center;
+    padding: .5rem;
     background-color: #ffffff61;
 }
 
 .hero article {
     background-color: #ffffff61;
     position: absolute;
-    top: 15rem;
+    top: 9rem;
     left: 2rem;
     right: 2rem;
+    padding: 2rem;
 }
 
 .hero article img {
     float: right;
-    margin: 2rem;
-    width: 13rem;
+    max-width: 13rem;
 }
 
 .hero article p {
     color: var(--secondary-color);
-    font-size: 1.5rem;
+    /* font-size: 1.5rem;
     padding: 1rem;
-    font-weight: 500;
+    font-weight: 500; */
 }
 
 footer {
