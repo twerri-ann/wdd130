@@ -169,24 +169,27 @@ figcaption {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     background-color: #3e3e3e;
-    color: #fff;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding: 2rem;
+    margin-top: 100px;
 }
 
 .end {
-    display: flex;
-    justify-content: flex-end;
+    color: #fff;
 }
 
 .sociallinks {
-    grid-column: 3;
-    justify-self: end;
+    display: flex;
+    gap: 1rem;
 }
 
 .sociallinks img {
-    width: 3em;
-    grid-column: 3;
+    width: 2em;
+} 
+
+.sociallinks a:hover {
+    background-color: unset;
 }
