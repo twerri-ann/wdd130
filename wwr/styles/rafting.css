@@ -133,7 +133,7 @@ header, main, footer {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 .stwo h2 {
@@ -144,7 +144,12 @@ header, main, footer {
 
 .stwo img {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px grey;
 }
 
 footer {
@@ -155,12 +160,17 @@ footer {
     padding: 2rem;
 }
 
-.social {
+.end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sociallinks {
     grid-column: 3;
     justify-self: end;
 }
 
-.social img {
+.sociallinks img {
     width: 3em;
     grid-column: 3;
 }
