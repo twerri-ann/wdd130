@@ -157,7 +157,7 @@ header, main, footer {
     display: flex;
     justify-content: space-between;
     width: 150px;
-    height: auto;
+    height: 50%;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px grey;
