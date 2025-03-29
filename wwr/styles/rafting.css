@@ -110,36 +110,47 @@ header, main, footer {
 }
 
 .sone { 
+    margin: 50px 0;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    text-align: justify;
 }
+
 .sone h2 {
-    grid-column: 3;
-    display: flex;
-    justify-content: center;
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em 0;
 }
 .sone img {
-    grid-column: 3;
-    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2;
 }
 
-.sone p {
-    grid-column:2;
-    grid-row: 2/5;
+.sone-section p:first-of-type {
+    grid-column: 1/2;
+    grid-row: 2;
+    padding: 0 20px;
 }
 
+.sone-section p:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2;
+    padding: 0 20px;
+}
 .stwo {
+    margin: 50px 0;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    justify-content: space-between;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    justify-items: center;
 }
 
 .stwo h2 {
-    grid-column: 3;
-    display: flex;
-    justify-content: space-around;
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em 0;
 }
 
 .stwo img {
@@ -152,11 +163,22 @@ header, main, footer {
     box-shadow: 0 0 30px grey;
 }
 
+figure:nth-of-type(odd) {
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em 0;
+}
+
 footer {
     background-color: #3e3e3e;
     color: #fff;
     display: grid;
-    grid-template-columns: 2fr 1fr 1 fr;
+    grid-template-columns: 2fr 1fr 1fr;
     padding: 2rem;
 }
 
