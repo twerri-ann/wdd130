@@ -13,11 +13,10 @@ body {
 }
 
 header {
-	margin: 1rem auto;
 	display: grid;
-	grid-template-columns: 120px 1fr 1fr;
-	align-items: flex-end;
-	max-width: 1000px;
+	grid-template-columns: 200px auto;
+	align-items: center;
+	background-color: #1c220a;
 }
 
 .logo img {
@@ -32,13 +31,9 @@ h1 {
 }
 
 .navigation {
-    float: right;
 	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
+	justify-content: space-around;
 	font-family: 'Boldonse', serif;
-    background-color: #fff;
 }
 
 .navigation li {
@@ -48,14 +43,14 @@ h1 {
 .navigation a {
 	display: flex;
     justify-content: center;
-	color: navy;
-	padding: 20px;
+	color: #ca5afa;
+	padding: 0.5rem;
+    margin: -0.14rem;
 	text-decoration: none;
-	font-size: 1.2rem;
 }
 
 .navigation a:hover {
-	color: #ca5afa;
+	color: #00af9a;
 	font-weight: 700;
 	text-decoration: underline;
 }
@@ -164,7 +159,6 @@ header, main, footer {
 }
 
 figure:nth-of-type(odd) {
-    background-color: var(--accent1-color);
     color: var(--nav-link-color);
     align-self: center;
 }
