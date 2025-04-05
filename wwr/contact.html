@@ -55,6 +55,35 @@
                     <figcaption>Guest Services Representative</figcaption>
                 </figure>
             </section>
+            <form>
+                <h1>Write us a message</h1>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-item column2">
+                        <label>Full Name: <input type="text" name="fullname"></label>
+                    </div>
+                    <div class="form-item column2">
+                        <label>Email: <input type="email" name="useremail"></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Questions</legend>
+                    <div class="column2">
+                        <label for="purpose">What is the purpose of your message?</label>
+                        <select name="purpose" id="purpose">
+                            <option value="generalinquiry">General Inquiry</option>
+                            <option value="reservationquestion">Reservation Question</option>
+                            <option value="websitesuggestion">Website Suggestion</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="message">Please state your message:</label>
+                        <textarea name="message" id="message" rows="4" placeholder="How soon can I book in advance?"></textarea>
+                        <label for="subscribe">Please subscribe me for monthly newsletters</label>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                    </div>    
+                </fieldset>
+                <button type="submit">Submit Poll</button>
+            </form>
         </main>
         <footer>
             <div class="end">
