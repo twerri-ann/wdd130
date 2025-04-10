@@ -168,6 +168,20 @@ figcaption {
     padding: 1em 0;
 }
 
+.map {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;             
+    background-color: #f0f0f0; 
+}
+
+.map-container iframe {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+
 form {
     width: 650px;
     margin: 0 auto;
