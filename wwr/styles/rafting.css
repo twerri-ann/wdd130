@@ -280,3 +280,35 @@ footer {
 .sociallinks a:hover {
     background-color: unset;
 }
+
+.home {
+    position: relative;
+}
+
+.home img {
+    width: 100%;
+}
+
+.home h1 {
+    position: absolute;
+    top: 1em;
+    left: 2rem;
+    right: 2rem;
+    text-align: center;
+    padding: .5rem;
+    background-color: #ffffff61;
+}
+
+.home article {
+    background-color: #ffffff61;
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+    right: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.home article p {
+    color: var(--secondary-color);
+}
