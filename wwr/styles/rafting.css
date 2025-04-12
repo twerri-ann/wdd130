@@ -280,3 +280,12 @@ footer {
 .sociallinks a:hover {
     background-color: unset;
 }
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
